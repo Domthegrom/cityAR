@@ -17,11 +17,12 @@ import '@google/model-viewer';
 export function ModelViewer() {
     useEffect(() => {
         const model = document.createElement('model-viewer');
-        model.src = "./resources/couch.gltf";
+        model.src = "https://cdn.glitch.com/21710700-a398-4f93-9a6c-eb0810904e74/industrial_lamp.gltf?v=1569485480008";
         model.ar = true
         model.autoRotate = true
         model.backgroundColor = '#000000'
-        // model.
+        model.iosSrc = "https://cdn.glitch.com/21710700-a398-4f93-9a6c-eb0810904e74/industrial_floor_lamp.usdz?v=1569485305204"
+        model.arScale = 'fixed'
         const modelDiv = document.getElementById('model')
         modelDiv?.appendChild(model)
     }, [])
