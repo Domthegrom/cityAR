@@ -21,8 +21,8 @@ export function ModelViewer() {
         model.ar = true
         model.autoRotate = true
         model.backgroundColor = '#000000'
-        model.iosSrc = "https://cdn.glitch.com/21710700-a398-4f93-9a6c-eb0810904e74/industrial_floor_lamp.usdz?v=1569485305204"
         model.arScale = 'fixed'
+        model.iosSrc = "https://cdn.glitch.com/21710700-a398-4f93-9a6c-eb0810904e74/industrial_floor_lamp.usdz?v=1569485305204"
         const modelDiv = document.getElementById('model')
         modelDiv?.appendChild(model)
     }, [])
