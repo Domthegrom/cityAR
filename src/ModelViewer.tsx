@@ -11,11 +11,13 @@ export function ModelViewer() {
         model.iosSrc = "https://cdn.glitch.com/21710700-a398-4f93-9a6c-eb0810904e74/industrial_floor_lamp.usdz?v=1569485305204"
         model.maxFieldOfView = '20deg'
         model.title = "Some Lamp"
-        model.toDataURL = "https://www.cityfurniture.com/product/5450017/tripod-metal-table-lamp"
         const modelDiv = document.getElementById('model')
         modelDiv?.appendChild(model)
     }, [])
     return (
+        <div>
         <div id="model"></div>
+        <div style={{color: 'black'}}>HTML</div>
+        </div>
     )
 }
